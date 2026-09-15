@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-sans text-ink-800 bg-ink-50;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary-600 text-white font-semibold
+           shadow-lg shadow-primary-600/25 hover:bg-primary-700 hover:shadow-primary-700/30
+           active:scale-[0.98] transition-all duration-200;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white text-ink-700 font-semibold
+           border border-ink-200 hover:border-primary-300 hover:text-primary-600 hover:shadow-md
+           active:scale-[0.98] transition-all duration-200;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-ink-600 font-medium
+           hover:bg-ink-100 hover:text-ink-900 transition-all duration-200;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl bg-white border border-ink-200 text-ink-800 placeholder-ink-400
+           focus:border-primary-400 focus:ring-4 focus:ring-primary-100 focus:outline-none
+           transition-all duration-200;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl border border-ink-200/60 shadow-sm hover:shadow-lg transition-all duration-300;
+  }
+
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/40;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-600 via-primary-500 to-primary-700 bg-clip-text text-transparent;
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(203 213 225) transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-ink-300 rounded-full;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-ink-400;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-500 { animation-delay: 500ms; }
+  .animation-delay-700 { animation-delay: 700ms; }
+}
