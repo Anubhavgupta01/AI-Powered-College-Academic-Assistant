@@ -1,0 +1,36 @@
+ABES ENGINEERING COLLEGE — LIBRARY RULES
+Retrieved: 2026-09-22
+
+SOURCE: https://www.abes.ac.in/library.html
+
+RULES AND REGULATIONS
+1. Entry is allowed to Identity Card holders only.
+2. Users should maintain peace in the Library and should not disturb other readers.
+3. Smoking, eating and drinking are strictly prohibited in the Library premises.
+4. Reference books, newspapers, magazines and journals should not be taken out of the library.
+5. Borrowing facilities are given only to members. Library books are issued at the counters on presenting the ID card.
+6. Members should verify issued books before leaving the circulation counter. Thereafter, the member is responsible for any damage to the book issued.
+7. If a book is not returned despite repeated reminders, the borrowing facility may be withdrawn for a period decided by the Librarian.
+
+RESERVATION OF BOOKS
+Library members can reserve books through OPAC (Online Public Access Catalogue) terminals in the library or from terminals located in the campus through web access.
+
+CIRCULATION POLICIES
+1. All students must present their college ID before borrowing library materials.
+2. Borrowing facilities are available to students, faculty and staff against the bar-coded membership-cum-identity card issued to them.
+3. Books borrowed may be kept for 10 days at a time.
+4. Books must be returned on or before the due date stamped on the due-date slip pasted in the last page of the book by the circulation desk.
+
+OVERDUE CHARGES
+1. If a book is not returned within the stipulated time, the student is charged Rs. 5 per book per day after the due date.
+2. A fine of Rs. 20 per day is charged if a reference book issued for overnight use is not returned within the stipulated time.
+
+LOSS AND DAMAGE
+If an issued book is misplaced, damaged or lost, the student must replace it with the latest edition. If replacement is not made, the student is charged the original procurement cost plus 30% of the original cost, whichever is higher. The student must also pay the applicable late fine.
+
+BOOK BANK SCHEME
+Members of the Book-Bank are issued a set of textbooks, comprising one textbook per subject, at the beginning of each semester.
+The Book-Bank set must be returned within two days after completion of theory/practical examinations. Otherwise, a fine of Rs. 5 per day per book is charged.
+
+NOTE
+This file preserves the policy points exposed on the official ABES Library page and is intended for RAG ingestion.

@@ -1,0 +1,27 @@
+ABES ENGINEERING COLLEGE — HOSTEL RULES / HOSTEL INFORMATION
+Retrieved: 2026-09-22
+
+OFFICIAL SOURCES
+Fee and accommodation terms: https://www.abes.ac.in/courses-offered.html
+Hostel information: https://www.abes.ac.in/life-at-abes.html
+ABES mandatory disclosure/footer pages also list a "Hostel Rule Booklet".
+
+VERIFIED HOSTEL INFORMATION
+ABES states that its hostels include 6 boys' hostels and 2 girls' hostels. Room options include AC and non-AC accommodation and single, double and triple sharing. Facilities described by ABES include sports courts, table tennis, gym, laundry services, and mess/canteen facilities.
+
+2026-27 ACCOMMODATION TERMS
+- Room allotment is first-come, first-serve.
+- AC rooms are allotted only upon full occupancy of the designated room.
+- AC usage: 5:00 PM to 8:00 AM on working days; round-the-clock on holidays, subject to commercial power availability.
+- Desert coolers are strictly prohibited in the Girls' Hostel; Boys' Hostel use is subject to college policy.
+- Limited attached-bathroom rooms are available for an additional Rs. 10,000, shared equally among roommates.
+- Hostel security is Rs. 5,000 refundable and applicable one time when opting for hostel.
+
+REFUND ON HOSTEL WITHDRAWAL
+Only Security, Mess & laundry charges for unutilized months are refundable on a pro rata basis.
+
+IMPORTANT LIMITATION
+The official ABES website lists a "Hostel Rule Booklet", but the full booklet text was not exposed by the available web indexing during this retrieval. Therefore this file does NOT invent check-in times, leave/outing rules, disciplinary rules, visitor rules, mess rules, medical rules, or other booklet-only provisions.
+
+FOR YOUR RAG PIPELINE
+If you obtain the actual Hostel Rule Booklet PDF from the ABES mandatory-disclosure page, ingest it as the authoritative hostel-rules source and replace/augment this file.

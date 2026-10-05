@@ -1,0 +1,24 @@
+ABES ENGINEERING COLLEGE — SCHOLARSHIP SOURCES
+Retrieved: 2026-09-22
+
+OFFICIAL SOURCES
+Admissions/Policies: https://www.abes.ac.in/courses-offered.html
+Circulars/Notices: https://www.abes.ac.in/circulars.html
+
+VERIFIED SCHOLARSHIP INFORMATION
+ABES's admissions page provides a "Scholarship Policies (State/Central)" policy link and a separate "PM-Vidyalaxmi Scheme" section.
+
+ABES CIRCULARS PAGE — RECENT SCHOLARSHIP NOTICES
+The official circulars page currently lists:
+- Notification for Renewal & Fresh Applications for Central Govt Scholarship — 2026-27 — dated 29-08-2026.
+- Notification regarding Renewal & Fresh Applications for Central Government Scholarship — Session 2025-26 — dated 26-08-2025.
+- Notification regarding Renewal & Fresh Applications for UP Government Scholarship — Session 2025-26 — dated 03-11-2025.
+- Notification regarding UP Government Scholarship for Session 2025-26 — dated 22-09-2025.
+- Older central and UP scholarship notices are also listed.
+
+PM-VIDYALAXMI
+The ABES admissions page exposes a section titled "Guidelines for PM-Vidyalaxmi Scheme". The indexed page confirms the section exists, but the complete embedded guideline text was not exposed in the available search extraction.
+
+IMPORTANT FOR RAG INGESTION
+Do not invent scholarship eligibility, income limits, award amounts, renewal conditions, or deadlines from the section title alone. If the linked policy/guideline PDFs are obtained from the ABES page, ingest those PDFs as additional source documents.
+

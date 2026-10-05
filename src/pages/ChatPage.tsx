@@ -2,7 +2,6 @@ import { useState, useRef, useEffect, FormEvent } from 'react';
 import {
   Bot,
   Send,
-  Sparkles,
   FileText,
   CalendarDays,
   Menu,
@@ -13,7 +12,6 @@ import {
   Search,
   Trash2,
   ChevronRight,
-  GraduationCap,
   ExternalLink,
   Clock,
   MapPin,
@@ -22,6 +20,11 @@ import {
   History,
 } from 'lucide-react';
 import AbesLogo from '@/components/AbesLogo';
+import { createClient } from '@insforge/sdk';
+
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://rkhwh883.us-east.insforge.app';
+const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'ik_b0d312af06cf8d41cd8ae7b663f7fbf7';
+const supabase = createClient({ baseUrl: supabaseUrl, anonKey: supabaseKey });
 
 type ChatPageProps = {
   onLogout: () => void;
@@ -182,7 +185,7 @@ export default function ChatPage({ onLogout }: ChatPageProps) {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [activeConversation.messages, isTyping]);
 
-  const handleSend = (e?: FormEvent, question?: string) => {
+  const handleSend = async (e?: FormEvent, question?: string) => {
     e?.preventDefault();
     const text = question || input.trim();
     if (!text) return;
@@ -204,74 +207,39 @@ export default function ChatPage({ onLogout }: ChatPageProps) {
     setInput('');
     setIsTyping(true);
 
-    setTimeout(() => {
-      const responses: Record<string, { content: string; citations?: Citation[]; events?: Event[] }> = {
-        attendance: {
-          content:
-            'Students must maintain a minimum of **75% attendance** in each subject to be eligible for semester examinations. This includes both theory and practical sessions.\n\nKey points:\n• 75% minimum in each subject\n• Medical leave requires valid documentation\n• Condonation available between 65%-75%',
-          citations: [
-            { source: 'ABES Student Handbook 2024-25', section: 'Section 4.3 — Attendance Requirements' },
-          ],
-        },
-        fest: {
-          content:
-            'The next major event is **TechFest 2024 — Innovation Summit**, scheduled for September 20th. It features hackathons, project exhibitions, and guest talks from industry leaders.\n\nRegistration is open to all students. You can register through the college portal.',
-          citations: [{ source: 'ABES Event Calendar 2024-25', section: 'September Events' }],
-          events: sampleEvents,
-        },
-        grading: {
-          content:
-            'ABES follows a **10-point CGPA system** as per AKTU guidelines.\n\nGrading scale:\n• O (Outstanding): 10 points\n• A+ (Excellent): 9 points\n• A (Very Good): 8 points\n• B+ (Good): 7 points\n• B (Above Average): 6 points\n• C (Average): 5 points\n• F (Fail): 0 points\n\nSGPA is calculated per semester, and CGPA is the cumulative average across all semesters.',
-          citations: [
-            { source: 'ABES Academic Regulations', section: 'Section 6 — Grading System' },
-            { source: 'AKTU Examination Scheme', section: 'Appendix A' },
-          ],
-        },
-        scholarship: {
-          content:
-            'To apply for a scholarship at ABES, follow these steps:\n\n• Check eligibility on the scholarship portal\n• Gather required documents (income certificate, mark sheets, caste certificate if applicable)\n• Fill out the online application on the National Scholarship Portal\n• Submit hard copy to the Student Affairs office\n• Track your application status online\n\nThe deadline for this semester is **September 30th**.',
-          citations: [
-            { source: 'ABES Scholarship Guide 2024-25', section: 'Section 2 — Application Process' },
-            { source: 'National Scholarship Portal', section: 'Eligibility Criteria' },
-          ],
-          events: [sampleEvents[3]],
-        },
-        hostel: {
-          content:
-            'ABES hostel rules include:\n\n• Curfew: 10:00 PM (girls), 11:00 PM (boys)\n• No outside guests allowed after 8:00 PM\n• Mess timing: 7-9 AM, 12-2 PM, 7-9 PM\n• Cleanliness inspection every Saturday\n• Leave application required for overnight absence\n• No electrical appliances above 1000W\n• Wi-Fi available 6 AM - 11 PM',
-          citations: [{ source: 'ABES Hostel Handbook 2024-25', section: 'Section 3 — Rules and Regulations' }],
-        },
-        registration: {
-          content:
-            'Semester registration typically begins **2 weeks before** the start of a new semester. The process is:\n\n• Log in to the student portal\n• Select courses for the semester\n• Pay the semester fee\n• Get advisor approval\n• Download your registration slip\n\nRegistration for the Fall 2024 semester is currently open.',
-          citations: [{ source: 'ABES Academic Calendar 2024-25', section: 'Registration Timeline' }],
-          events: sampleEvents.slice(0, 2),
-        },
-      };
+    try {
+      const { data, error } = await supabase.functions.invoke('chat', {
+        body: { question: text }
+      });
 
-      const key = Object.keys(responses).find((k) => text.toLowerCase().includes(k));
-      const response = key
-        ? responses[key]
-        : {
-            content:
-              "I can help you with questions about academic policies, attendance, exams, events, scholarships, hostel rules, and more. Could you please rephrase your question or try one of the suggested questions below?",
-            citations: [{ source: 'ABES Knowledge Base', section: 'General Information' }],
-          };
-
+      if (error) throw error;
+      
       const assistantMsg: Message = {
         id: `m${Date.now() + 1}`,
         role: 'assistant',
-        content: response.content,
-        citations: response.citations,
-        events: response.events,
+        content: data.answer,
+        citations: data.sources || [],
+        events: [],
         timestamp: new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }),
       };
 
       setConversations((prev) =>
         prev.map((c) => (c.id === activeId ? { ...c, messages: [...c.messages, assistantMsg] } : c))
       );
+    } catch (error) {
+      console.error("Error calling chat edge function:", error);
+      const errorMsg: Message = {
+        id: `m${Date.now() + 1}`,
+        role: 'assistant',
+        content: "Sorry, I encountered an error while processing your request.",
+        timestamp: new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }),
+      };
+      setConversations((prev) =>
+        prev.map((c) => (c.id === activeId ? { ...c, messages: [...c.messages, errorMsg] } : c))
+      );
+    } finally {
       setIsTyping(false);
-    }, 1500);
+    }
   };
 
   const handleNewChat = () => {
@@ -444,9 +412,7 @@ export default function ChatPage({ onLogout }: ChatPageProps) {
             {activeConversation.messages.length === 0 ? (
               /* Empty state */
               <div className="flex flex-col items-center justify-center min-h-[60vh] text-center animate-fade-in">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary-600 to-primary-800 flex items-center justify-center mb-5 shadow-lg shadow-primary-600/25">
-                  <GraduationCap className="w-8 h-8 text-white" />
-                </div>
+                <AbesLogo size={64} showText={false} className="mb-5 justify-center" />
                 <h2 className="text-2xl font-extrabold text-ink-900 mb-2">
                   How can I help you today?
                 </h2>

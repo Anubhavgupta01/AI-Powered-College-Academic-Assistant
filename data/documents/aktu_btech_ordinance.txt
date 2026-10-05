@@ -1,0 +1,19 @@
+ABES RAG SOURCE DOCUMENT
+File: aktu_btech_ordinance.txt
+Retrieved: 2026-09-22
+
+SOURCE STATUS
+The requested AKTU B.Tech ordinance source was not retrievable from an official AKTU domain in the available web search results. Do NOT treat the notes below as a substitute for the official ordinance.
+
+VERIFIED CONTEXT FROM ABES
+ABES states that B.Tech admissions for 2026-27 follow eligibility notified by AICTE/AKTU and directs candidates to the AKTU website for university details.
+
+ATTENDANCE NOTE
+ABES/AKTU-related search results commonly reference a 75% attendance requirement, but the official AKTU ordinance text itself was not located during this retrieval. Therefore, this file intentionally does not present 75% attendance, grading, promotion, detention, or examination clauses as verified ordinance text.
+
+RECOMMENDED SOURCE TO ADD BEFORE PRODUCTION
+Obtain the current official AKTU B.Tech ordinance/academic ordinance PDF directly from https://aktu.ac.in/ and replace this file with the source document or a faithful transcription.
+
+OFFICIAL SOURCE
+https://aktu.ac.in/
+ABES admission page: https://www.abes.ac.in/courses-offered.html

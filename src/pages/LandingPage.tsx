@@ -510,9 +510,7 @@ export default function LandingPage({ onGetStarted, onLogin }: LandingPageProps)
             <div className="absolute bottom-0 left-0 w-72 h-72 bg-accent-400/10 rounded-full blur-3xl" />
 
             <div className="relative">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
-                <GraduationCap className="w-8 h-8 text-white" />
-              </div>
+              <AbesLogo size={64} showText={false} className="mb-6 justify-center" />
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white text-balance">
                 Ready to get your answers?
               </h2>

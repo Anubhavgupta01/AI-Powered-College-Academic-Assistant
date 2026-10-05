@@ -1,0 +1,24 @@
+ABES ENGINEERING COLLEGE — PLACEMENT INFORMATION / ELIGIBILITY
+Retrieved: 2026-09-22
+
+OFFICIAL SOURCE:
+https://www.abes.ac.in/placement.html
+
+CURRENT PLACEMENT PAGE
+The ABES placement page reports 2025-26 placement statistics including:
+- 489 companies for campus placements
+- 1,289 placements/offers in campus
+- Highest package: 45 LPA
+
+The page also describes ABES's recruiter network and lists placement highlights.
+
+ELIGIBILITY LIMITATION
+The public ABES placement page available through search does not expose a complete student placement-eligibility policy (for example, a full list of CGPA, attendance, back-paper, discipline, or offer-participation conditions).
+
+The ABES website's mandatory-disclosure/footer area references a placement/career section, and an external copy of a document titled "Placement Policy 2026-27" exists on Scribd. Because that copy is not an official ABES-hosted source, its detailed rules have intentionally NOT been copied into this official-source dataset.
+
+DO NOT INVENT
+Do not infer placement eligibility from placement statistics. For a production RAG system, obtain the official ABES/CCPD Placement Policy 2026-27 PDF/circular and ingest it as the authoritative eligibility document.
+
+OFFICIAL SOURCE:
+https://www.abes.ac.in/placement.html

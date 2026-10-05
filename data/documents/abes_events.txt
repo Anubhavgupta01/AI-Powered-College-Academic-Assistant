@@ -1,0 +1,243 @@
+ABES ENGINEERING COLLEGE — EVENT DATASET
+File: abes_events.txt
+Retrieved: 2026-09-22
+
+PURPOSE
+Real ABES events for the RAG/event-ingestion pipeline.
+Each dated event uses the required format:
+[EVENT: YYYY-MM-DD]
+
+IMPORTANT
+- Dates below are taken from official ABES-hosted pages.
+- No event date has been invented.
+- Where an official ABES club page lists an event but does not publish an exact date, it is placed in the UNDated section and is NOT suitable for temporal filtering.
+- Event dates are historical unless explicitly stated otherwise.
+- Current date at retrieval: 2026-09-22
+
+============================================================
+DATED EVENTS
+============================================================
+
+[EVENT: 2026-02-12]
+Title: ICCSC-2026 — 2nd International Conference on Computing Sciences & Communications
+Organizer: Department of Computer Science & Engineering, ABES Engineering College
+Type: Technical / Research Conference
+Description:
+The 2nd International Conference on Computing Sciences & Communications (ICCSC-2026) was organized by the Department of Computer Science & Engineering at ABES Engineering College, Ghaziabad. The conference covered computing sciences and communications, including computer vision, image processing, artificial intelligence, machine learning, data science, big data, cloud computing, IoT, blockchain and network communication. The official schedule lists the conference for 12–13 February 2026.
+Source: https://iccsc.abes.ac.in/
+
+[EVENT: 2024-10-18]
+Title: TECH WAR
+Organizer: REQUIZA Club, Electronics and Communication Engineering
+Type: Technical Event
+Description:
+A technical event titled "TECH WAR" was held under the REQUIZA Club.
+Source: https://www.abes.ac.in/it-department.html
+
+[EVENT: 2024-05-14]
+Title: GUESS THE POKEMON
+Organizer: REQUIZA Club, Electronics and Communication Engineering
+Type: Technical Event
+Description:
+A technical event titled "GUESS THE POKEMON" was held under the REQUIZA Club.
+Source: https://www.abes.ac.in/it-department.html
+
+[EVENT: 2023-12-13]
+Title: Brain-O-Race 2.0
+Organizer: REQUIZA Club, Electronics and Communication Engineering
+Type: Technical Event
+Description:
+REQUIZA Club conducted its technical event "Brain-O-Race 2.0".
+Source: https://www.abes.ac.in/it-department.html
+
+[EVENT: 2023-05-01]
+Title: Pen Down Your Perusal
+Organizer: REQUIZA Club, Electronics and Communication Engineering
+Type: Technical Event
+Description:
+REQUIZA Club conducted the technical event "Pen Down Your Perusal".
+Source: https://www.abes.ac.in/it-department.html
+
+[EVENT: 2022-12-27]
+Title: Brain-O-Race
+Organizer: REQUIZA Club, Electronics and Communication Engineering
+Type: Technical Event
+Description:
+REQUIZA Club conducted the technical event "Brain-O-Race".
+Source: https://www.abes.ac.in/it-department.html
+
+[EVENT: 2022-11-18]
+Title: Circuitron
+Organizer: REQUIZA Club, Electronics and Communication Engineering
+Type: Technical Event
+Description:
+REQUIZA Club conducted "Circuitron" on 18–19 November 2022.
+Source: https://www.abes.ac.in/it-department.html
+
+[EVENT: 2022-09-30]
+Title: TechWar
+Organizer: REQUIZA Club, Electronics and Communication Engineering
+Type: Technical Event
+Description:
+REQUIZA Club conducted the technical event "TechWar".
+Source: https://www.abes.ac.in/it-department.html
+
+============================================================
+ADDITIONAL DATED ABES TECHNICAL/ACADEMIC EVENTS
+============================================================
+
+[EVENT: 2024-11-21]
+Title: Workshop on Future Skilling Domains
+Organizer: ABES
+Type: Workshop
+Description:
+A workshop on future skilling domains covered AR/VR, Robotics, AI and Design Thinking.
+Source: https://www.abes.ac.in/computer-science-engineering.html
+
+[EVENT: 2024-11-09]
+Title: Awareness Session on ACM ICPC 2025
+Organizer: ABES / CSE
+Type: ACM / Coding Session
+Description:
+An awareness session covered the ACM ICPC 2025 registration process and preparation topics.
+Source: https://www.abes.ac.in/computer-science-engineering.html
+
+[EVENT: 2024-10-16]
+Title: Pull & Merge — Hacktoberfest
+Organizer: ABES / CSE
+Type: Open Source / Technical Event
+Description:
+A session titled "Pull & Merge – Hacktoberfest" focused on open-source collaboration, GitHub skills and networking.
+Source: https://www.abes.ac.in/computer-science-engineering.html
+
+[EVENT: 2024-07-08]
+Title: RUST-ED
+Organizer: ABES / CSE
+Type: Technical Session
+Description:
+A session titled "RUST-ED" covered Rust programming and its industry relevance.
+Source: https://www.abes.ac.in/computer-science-engineering.html
+
+[EVENT: 2024-07-06]
+Title: Navigating Campus Placements
+Organizer: ABES / CSE
+Type: Placement Session
+Description:
+A session on campus placements covered hiring processes, strategies and preparation for mass recruiters.
+Source: https://www.abes.ac.in/computer-science-engineering.html
+
+[EVENT: 2024-07-03]
+Title: Branch and Beyond
+Organizer: ABES / CSE
+Type: Workshop
+Description:
+A two-day hands-on workshop covering web development and blockchain was listed for 3 and 5 July 2024.
+Source: https://www.abes.ac.in/computer-science-engineering.html
+
+[EVENT: 2024-05-13]
+Title: Mind the Gap — UI/UX Workshop
+Organizer: ABES / CSE
+Type: UI/UX Workshop
+Description:
+A hands-on UI/UX workshop with practical exercises was listed for 13–14 May 2024.
+Source: https://www.abes.ac.in/computer-science-engineering.html
+
+[EVENT: 2024-02-19]
+Title: Quizzinar
+Organizer: ABESEC OPTICA
+Type: Technical / Science Event
+Description:
+A Quizzinar was conducted by ABESEC OPTICA.
+Source: https://www.abes.ac.in/it-department.html
+
+[EVENT: 2024-02-20]
+Title: Importance of Technology Transfer
+Organizer: ABESEC OPTICA
+Type: Guest Lecture
+Description:
+Guest lecture by Ms. Somya Kaushik, Associate Vice President, Elpis Analytix, on the importance of technology transfer.
+Source: https://www.abes.ac.in/it-department.html
+
+[EVENT: 2024-02-21]
+Title: Importance of IPR in Academia and Research
+Organizer: ABESEC OPTICA
+Type: Guest Lecture
+Description:
+Guest lecture by Ms. Pooja Kumar, Director, Innove Intellects, Ghaziabad, on the importance of intellectual property rights in academia and research.
+Source: https://www.abes.ac.in/it-department.html
+
+[EVENT: 2024-02-22]
+Title: Poster Design Competition — Optics and Photonics
+Organizer: ABESEC OPTICA
+Type: Competition
+Description:
+A poster design competition on "Optics and photonics" was held as part of the listed OPTICA activities.
+Source: https://www.abes.ac.in/it-department.html
+
+[EVENT: 2024-02-23]
+Title: Felicitation of Winners
+Organizer: ABESEC OPTICA
+Type: Felicitation
+Description:
+Felicitation of winners concluded the listed OPTICA activities.
+Source: https://www.abes.ac.in/it-department.html
+
+============================================================
+KALAKRIT / ACM / TEDx — EVENTS LISTED BY OFFICIAL ABES PAGES
+WITHOUT AN EXACT DATE
+============================================================
+
+These entries are real event names/content shown on official ABES club pages, but the indexed pages do not provide an exact event date. They should NOT receive an [EVENT: YYYY-MM-DD] tag until an official dated notice/page is obtained.
+
+Kalakrit:
+- Manthan '23 — flagship cultural event involving singing, dancing, fashion and other cultural domains.
+- Ground Zero
+- Roadies
+- Manthan
+- Diwali Delight — community activity involving distribution of food/snacks through Humans of ABES.
+
+Source:
+https://www.abes.ac.in/kalakrit.html
+
+ABES ACM Student Chapter / ACM-W:
+- ACPC — ABES Collegiate Programming Contest; an inter-collegiate programming competition inspired by ACM ICPC.
+- Eminent Speaker Sessions (25–26)
+- DSP Session (2025–26)
+- Smart ABES Hackathon 25–26
+- Navrohan 2K25 — annual recruitment drive.
+
+Source:
+https://www.abes.ac.in/ABES%20ACM%20Student%20Chapter%20%26%20ABES%20ACM-W%20Chapter.html
+
+TEDx:
+- ABES officially lists TEDx as one of its student/campus engagement clubs.
+- The official ABES homepage describes TEDx as "Catalysts of Change: Igniting Conversations at TEDx".
+- A TEDxABESEC'24 brochure is listed in ABES's Mandatory Disclosures.
+- No exact event date was exposed in the official indexed content used for this file, so no fabricated date is assigned.
+
+Sources:
+https://www.abes.ac.in/
+https://www.abes.ac.in/footer-form.html/
+
+============================================================
+EVENT-INGESTION NOTES
+============================================================
+
+For the Prompt 5 temporal pipeline:
+1. Parse [EVENT: YYYY-MM-DD] as event_date.
+2. Treat events before the current date as historical/expired.
+3. Treat events on or after the current date as upcoming.
+4. Do not assign dates to undated club events.
+5. When an official ABES notice later provides a date for an undated club event, add a new dated record rather than guessing.
+
+No future-dated club event was included merely because a club page calls something "Past/Upcoming Events"; the official indexed content did not provide an exact future date.
+
+PRIMARY OFFICIAL SOURCES
+- ABES homepage: https://www.abes.ac.in/
+- ABES Life@ABES: https://www.abes.ac.in/life-at-abes.html
+- Kalakrit: https://www.abes.ac.in/kalakrit.html
+- ACM / ACM-W: https://www.abes.ac.in/ABES%20ACM%20Student%20Chapter%20%26%20ABES%20ACM-W%20Chapter.html
+- IT Department / REQUIZA & OPTICA activities: https://www.abes.ac.in/it-department.html
+- CSE Department events/sessions: https://www.abes.ac.in/computer-science-engineering.html
+- ICCSC-2026: https://iccsc.abes.ac.in/
+- Mandatory Disclosures: https://www.abes.ac.in/footer-form.html/
